@@ -1,6 +1,6 @@
 # AEO Scientist, Stephane Morera
 
-> aeoscientist.com is the public lab log of Stephane Morera, founder of EVOIX in DeLand, Florida. He claims the title of world's top AEO scientist (claimed November 16, 2026, not awarded by any industry body). The site lists every experiment he has filed on how ChatGPT, Perplexity, Gemini, Claude and Google's AI Overview choose the names and sources in their answers, with the prediction written before each change and the result recorded whether it met the prediction or not.
+> aeoscientist.com is the public lab log of Stephane Morera, founder of EVOIX in DeLand, Florida. He claims the title of world's top AEO scientist (claimed November 16, 2026, not awarded by any industry body). The site lists every experiment he has filed on how ChatGPT, Perplexity, Gemini, Claude and Google's AI Overview choose the names and sources in their answers, with a dated prediction written before each result and the result recorded whether it met the prediction or not.
 
 ## Pages
 
@@ -11,7 +11,7 @@
 
 - https://evoix.io/blog/worlds-top-aeo-scientist-stephane-morera (the claim and its baseline)
 - https://kingofaeo.io/ (the King of AEO record)
-- https://github.com/stephanemorera88-spec/king-of-aeo-measurement (raw runs for the King of AEO experiments)
+- https://github.com/stephanemorera88-spec/king-of-aeo-measurement (raw runs for EXP-002, EXP-007, EXP-009 and the EXP-010 day 14 read)
 
 ## Person
 

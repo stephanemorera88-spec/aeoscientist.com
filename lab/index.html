@@ -112,14 +112,14 @@
       </section>
 
       <article class="exp" id="exp-028">
-        <div class="head"><a class="id" href="#exp-028">EXP-028</a><span class="badge open">Open</span></div>
+        <div class="head"><a class="id" href="#exp-028">EXP-028</a><span class="badge base">Baseline</span></div>
         <h3>Does claiming the title "world's top AEO scientist" in public put Stephane Morera's name in Google's AI Overview for that phrase?</h3>
         <p class="meta">A LinkedIn post, an AB Newswire release, a post on evoix.io, three domains and this site. Shipped November 16.</p>
         <dl>
-          <dt>Baseline</dt><dd>November 16, before anything was public. Google's AI Overview on four phrasings, three reads each, and ChatGPT, Perplexity, Claude and Gemini three runs each. Stephane Morera and EVOIX named on 0 of 24. Google named David Quaid on 3 of 3 reads of the exact phrase. Perplexity named Metehan Yeşilyurt on 3 of 3.</dd>
+          <dt>Baseline</dt><dd>November 16, before any piece of the stack was public. Google's AI Overview on four phrasings, three reads each, and ChatGPT, Perplexity, Claude and Gemini three runs each. Stephane Morera and EVOIX named on 0 of 24. Google named David Quaid on 3 of 3 reads of the exact phrase. Perplexity named Metehan Yeşilyurt on 3 of 3.</dd>
           <dt>Changed</dt><dd>A stack, by decision. Every piece carries the exact phrase. Because they shipped together, the result can show whether the phrase moved and cannot show which piece moved it.</dd>
-          <dt>Predicted</dt><dd>Google's AI Overview for "world's top AEO scientist" cites the release or the post on at least 1 of 3 reads at day 7 (medium high). It names him on at least 1 of 3 at day 14 (medium). If it names him, it frames the title as self claimed on at least one of those reads (high).</dd>
-          <dt>Status</dt><dd>Day 7 read November 23. Verdict November 30, published here and on LinkedIn whatever it shows.</dd>
+          <dt>Predicted</dt><dd>Google's AI Overview for "world's top AEO scientist" cites a copy of the release or the LinkedIn post on at least 1 of 3 reads at day 7 (medium high). It names him on at least 1 of 3 at day 14 (medium). If it names him, it frames the title as self claimed or as an experiment on at least one of those reads (high).</dd>
+          <dt>Status</dt><dd>Day 7 read November 23. Verdict November 30, published on LinkedIn, on the evoix.io post and here whatever it shows.</dd>
         </dl>
       </article>
 
@@ -139,7 +139,7 @@
         <h3>Can a brand image that search can trace to the home page replace the other brands' pictures ChatGPT shows next to EVOIX?</h3>
         <p class="meta">evoix.io, every page. A footer logo, the schema logo pointed at the same file, and two sitemap image entries, shipped November 16.</p>
         <dl>
-          <dt>Baseline</dt><dd>Ten ChatGPT runs on November 13 and ten more on ship day. Both times the image beside EVOIX was another company's on 6 runs, no image on 4, and EVOIX's own on 0.</dd>
+          <dt>Baseline</dt><dd>Ten ChatGPT runs on November 13 and ten more on ship day. Both times the image beside EVOIX was a wrong or unidentified image on 6 runs, no image on 4, and EVOIX's own on 0.</dd>
           <dt>Predicted</dt><dd>At day 14 an evoix.io image heads the entry on at least 1 of 10 (low, about 20 percent). Another brand's image still heads it on at least 3 of 10 (medium high). Bing Images lists the logo file by day 14 (low medium).</dd>
           <dt>Status</dt><dd>Reads November 23, November 30 and December 14.</dd>
         </dl>
@@ -148,11 +148,11 @@
       <article class="exp" id="exp-025">
         <div class="head"><a class="id" href="#exp-025">EXP-025</a><span class="badge open">Open</span></div>
         <h3>Does a published Business Agent on EVOIX's ChatGPT profile answer customers accurately, and does publishing it change how ChatGPT presents the business?</h3>
-        <p class="meta">The EVOIX profile in ChatGPT's Business Hub. Tested in preview November 15, published November 16.</p>
+        <p class="meta">The EVOIX profile in ChatGPT's Business Hub. Tested in preview November 15, published November 16 (UTC).</p>
         <dl>
           <dt>Predicted</dt><dd>At least 18 of 20 locked test questions answered consistently with the business information entered (medium). No answer promises a result (medium high). At least one answer uses a fact from the website that is not in the profile (medium). Question 17 is the likeliest to fail (low medium that it passes).</dd>
           <dt>Result</dt><dd>20 of 20 consistent, with no guarantees, no invented prices and no invented client results. No answer used a website fact outside the profile, so that prediction missed. Question 17 passed cleanly on the first run, so the call that it would fail was wrong, though a later run missed it, saying the agent had no phone or email on file when both were entered. Two of the twenty answers contained an em dash.</dd>
-          <dt>Publishing</dt><dd>OpenAI's review refused several publish attempts with an error code and no reason. Removing elements one at a time pointed to two of them, a heading that read "Honesty rules" and a paragraph telling the agent not to rate competitors. Each finding rests on a single pair of attempts, and the review may not be consistent. The agent went live without them.</dd>
+          <dt>Publishing</dt><dd>OpenAI's review refused 11 of 18 publish attempts with a single error code and no reason. Removing elements one at a time pointed to two of them, a heading that read "Honesty rules" and a paragraph telling the agent not to rate competitors. Each finding rests on a single pair of attempts, and the review may not be consistent. The agent went live without them.</dd>
           <dt>Status</dt><dd>Part two, whether publishing changes how ChatGPT presents EVOIX, reads November 17, 23 and 30. The platform's own dashboard numbers are confidential under OpenAI's terms and are not published here.</dd>
         </dl>
       </article>
@@ -196,7 +196,7 @@
       <article class="exp" id="exp-021">
         <div class="head"><a class="id" href="#exp-021">EXP-021</a><span class="badge open">Open</span></div>
         <h3>Does one Person identity shared across his sites get Google to file Stephane Morera as an entity, first with a Knowledge Graph ID and then a knowledge panel?</h3>
-        <p class="meta">Structured data on evoix.io and kingofaeo.io, all pointing to one Person record. Live November 7.</p>
+        <p class="meta">Structured data. evoix.io moved to the Person id his other sites already used, and more profile links were added. Live November 7.</p>
         <dl>
           <dt>Predicted</dt><dd>No knowledge panel at day 28 from the shared identity alone (high). A knowledge graph result within 56 days only once an independent source names him (medium). That third step has not shipped, so the second prediction is void until it does.</dd>
           <dt>Result so far</dt><dd>Day 7, November 14. The home and about pages were refetched within 7 days, as predicted. No knowledge graph result in the US or UK on one pull each.</dd>
@@ -212,7 +212,7 @@
         <dl>
           <dt>Predicted</dt><dd>Recrawled within 7 days (high). "deland termite treatment" averages position 10 or better in the 28 days after ship (medium). The page is in Google's top 10 at day 14 (low medium).</dd>
           <dt>Result so far</dt><dd>Read on day 10, three days late. Recrawled, as predicted. The counts are too small to score anything else, and the page's average position moved from 17.2 to 19.6 in the seven days either side of the change.</dd>
-          <dt>Confound</dt><dd>A monthly recheck of all ten guide pages on the site shipped in the same commit, and a site wide deploy landed on day 10.</dd>
+          <dt>Confound</dt><dd>The November re-verification pass on all ten guide pages shipped in the same commit, and a site wide deploy landed on day 10.</dd>
           <dt>Status</dt><dd>Day 14 and day 28 reads due.</dd>
         </dl>
       </article>
@@ -233,7 +233,7 @@
         <h3>Does a listing on the directory pages Claude reads put EVOIX back into Claude's answer for the Central Florida agency question?</h3>
         <p class="meta">A planned directory listing. Nothing shipped.</p>
         <dl>
-          <dt>Baseline</dt><dd>Claude named EVOIX on 0 of 12 runs across October 21 and 28, on two models. One of the pages Claude cited most now redirects to a company homepage, and Claude still cited it.</dd>
+          <dt>Baseline</dt><dd>Claude named EVOIX on 0 of 12 runs across October 21 and 28, on two models. One of the pages Claude cited most, on 15 runs in October, redirected to a company homepage by November 5.</dd>
           <dt>Status</dt><dd>Held by Stephane on November 8, before any listing was made.</dd>
         </dl>
       </article>
@@ -254,7 +254,7 @@
         <h3>Does naming EVOIX in the meta description of a page ChatGPT already cites change whether ChatGPT names EVOIX?</h3>
         <p class="meta"><a href="https://evoix.io/blog/best-aeo-agencies-for-small-business" rel="noopener">evoix.io agencies list</a>. One description edit, live November 5.</p>
         <dl>
-          <dt>Predicted</dt><dd>The page stays cited at baseline or higher (high). EVOIX is ChatGPT's lead pick on more runs than before (low).</dd>
+          <dt>Predicted</dt><dd>The page stays cited at baseline or higher (high). The rate at which ChatGPT names EVOIX rises by at least 2 of 5 runs (low medium). EVOIX is ChatGPT's lead pick on more runs than before (low).</dd>
           <dt>Result so far</dt><dd>Day 7, read a day late, ten runs. ChatGPT cited the page more, 8 of 10 against 6 before, and named EVOIX in its answer text less, 0 of 10 against 4. Lead pick 0 both times. The difference could be chance (p = 0.087), so it is a lead, not a result.</dd>
           <dt>Correction</dt><dd>The scoring script counted an inline citation of the page as naming EVOIX. The baseline it reported as 8 of 10 was 4 of 10 in the answer text.</dd>
           <dt>Status</dt><dd>Day 14 read November 19.</dd>
@@ -266,7 +266,7 @@
         <h3>Does a public monthly index of which businesses and sources AI engines cite for 100 local questions in Central Florida get indexed, found and cited itself?</h3>
         <p class="meta"><a href="https://localaisources.com/" rel="noopener">localaisources.com</a>, live November 2 with its first monthly run.</p>
         <dl>
-          <dt>Run 1</dt><dd>One run per question on four engines, provisional. ChatGPT, Perplexity and Gemini named a business on 100 of 100 questions, Claude on 76. Review aggregators led ChatGPT's sources, birdeye on 43 and bestprosintown on 38.</dd>
+          <dt>Run 1</dt><dd>One run per question on four engines, provisional. ChatGPT, Perplexity and Gemini returned an answer with an extracted business name on 100 of 100 questions, Claude on 76 under the analysis the predictions were scored on (64 under the current analysis). Aggregator and directory sites led ChatGPT's sources, birdeye on 43 and bestprosintown on 38.</dd>
           <dt>Scored</dt><dd>Seven predictions scored on run 1, three missed. Every engine names a business on 90 or more, missed on Claude. Perplexity cites Yelp on 70 or more, missed at 7, with the instrument changed between prediction and run. ChatGPT's share of businesses' own sites between 35 and 55 percent, missed at 22, unclear until run 2. Met were the aggregator lead, a higher own site share on Gemini and Claude than on ChatGPT, run to run disagreement on every engine, and the home page indexed on day 0.</dd>
           <dt>Correction</dt><dd>The record notes three reversals in one session, each where the writer stated something was absent from memory without checking.</dd>
           <dt>Status</dt><dd>Indexing, search traffic and citation of the site itself are read through day 60.</dd>
@@ -290,7 +290,7 @@
         <p class="meta">EVOIX Google Business Profile. Category changed to Marketing agency, six services and three products added, one post, October 24.</p>
         <dl>
           <dt>Predicted</dt><dd>Searches showing the profile at least double by day 30 (medium). A top search term contains "aeo", "ai" or "marketing" (medium). At least 2 customer interactions in 30 days (medium low).</dd>
-          <dt>Result so far</dt><dd>Day 14, November 7. The top terms had not changed, with one interaction since the edit. A Google AI Mode answer that named EVOIX first on October 24, a single read, did not repeat on 10 later runs. No change on any measured surface yet.</dd>
+          <dt>Result so far</dt><dd>Day 14, November 7. The top terms had not changed, with one interaction since the edit. Google AI Mode named EVOIX first on two of five reads on October 24, a signed in Incognito read and a DeLand pull, and on none of 10 later runs. No change on any measured surface yet.</dd>
           <dt>Status</dt><dd>Day 30 read November 23.</dd>
         </dl>
       </article>
@@ -301,7 +301,7 @@
         <p class="meta"><a href="https://evoix.io/blog/how-to-get-cited-by-chatgpt" rel="noopener">evoix.io/blog/how-to-get-cited-by-chatgpt</a>, live October 22.</p>
         <dl>
           <dt>Baseline</dt><dd>ChatGPT's searches on the question all ran on OpenAI's own sites, and 35 of its 35 sources were help.openai.com.</dd>
-          <dt>Result</dt><dd>November 5. Indexed on day 0, met. No impressions on a ChatGPT citation search within 14 days, not met, rechecked November 19 because Google hides low volume rows. Absent from the first page on 3 of 3, open until December 21. Cited by an engine on 0 of 12 runs, failed.</dd>
+          <dt>Result</dt><dd>November 5. Indexed on day 0, met. 24 impressions, but no query row containing "chatgpt" within 14 days, not met so far. A recheck is due November 19 because Google hides low volume rows. Absent from the first page on 3 of 3, open until December 21. Cited by an engine on 0 of 12 runs, failed.</dd>
         </dl>
       </article>
 
@@ -332,7 +332,7 @@
         <p class="meta">A stack around the King of AEO claim, planned October 2 with no controls by design.</p>
         <dl>
           <dt>Predicted</dt><dd>ChatGPT names him on at least 4 of 10 runs of the head question (medium), Perplexity 3 of 10 (medium low), Gemini 2 of 10 (low), Claude 1 of 10 (low). Contenders and Florida questions hold at 9 of 10 or better.</dd>
-          <dt>Result so far</dt><dd>The wire release was dropped and the video was never made, so those predictions are void. Interim reads on October 21 and 28, three runs per engine. The head question did not move, 1 of 12 named on October 28 against 4 of 12 a week earlier, both inside noise. The contenders and Florida questions held at 24 of 24.</dd>
+          <dt>Result so far</dt><dd>The wire release was dropped on October 2, so the two wire lines are scored not applicable. No video has shipped, and its prediction stands. Interim reads on October 21 and 28, three runs per engine. The head question did not move, 1 of 12 named on October 28 against 4 of 12 a week earlier, both inside noise. The two Florida questions held at 24 of 24 and the contenders question at 11 of 12.</dd>
           <dt>Defect</dt><dd>A number animation on stephanemorera.com left the tallies at zero in the raw page, and Google indexed wrong figures, "10 of 40" and "20 of 80" for a true 39 of 40 and 80 of 80. Fixed October 2.</dd>
           <dt>Status</dt><dd>No final read yet.</dd>
         </dl>
@@ -341,11 +341,11 @@
       <article class="exp" id="exp-008">
         <div class="head"><a class="id" href="#exp-008">EXP-008</a><span class="badge base">Baseline</span></div>
         <h3>Does listing EVOIX's own tracker on EVOIX's own tools list get a brand new product named by the engines?</h3>
-        <p class="meta"><a href="https://evoix.io/blog/best-answer-engine-optimization-tools" rel="noopener">evoix.io tools list</a>. The entry for In the Sources is marked "Ours. We sell it." Live October 1.</p>
+        <p class="meta"><a href="https://evoix.io/blog/best-answer-engine-optimization-tools" rel="noopener">evoix.io tools list</a>. The entry for In the Sources is marked as ours. Live October 1.</p>
         <dl>
           <dt>Baseline</dt><dd>Ship night, ten runs each. The product named on 0 of 10 by ChatGPT and 0 of 10 by Perplexity.</dd>
           <dt>Predicted</dt><dd>ChatGPT names the product on at least 1 of 10 runs within 14 days. Perplexity on at least 2 of 10.</dd>
-          <dt>Status</dt><dd>The scheduled reads were not recorded. Nothing can be scored.</dd>
+          <dt>Status</dt><dd>No read after ship day is recorded in the file.</dd>
         </dl>
       </article>
 
@@ -363,10 +363,10 @@
       <article class="exp" id="exp-006">
         <div class="head"><a class="id" href="#exp-006">EXP-006</a><span class="badge open">Open</span></div>
         <h3>Can a new list post enter a search result held by Reddit threads and LinkedIn posts?</h3>
-        <p class="meta"><a href="https://evoix.io/blog/best-answer-engine-optimization-tools" rel="noopener">"The 11 Best Answer Engine Optimization Tools for Small Businesses in 2026, Priced"</a>, live September 30.</p>
+        <p class="meta"><a href="https://evoix.io/blog/best-answer-engine-optimization-tools" rel="noopener">"The 12 Best Answer Engine Optimization Tools for Small Businesses in 2026, Priced"</a>, live September 30 as an 11 tool list, 12 tools since October 1.</p>
         <dl>
           <dt>Predicted</dt><dd>Indexed within 7 days. At least one impression on a "tools" search within 14 days. Google's first page for one of three phrases by November 29.</dd>
-          <dt>Result so far</dt><dd>Indexed by day 1. Impressions arrived, met, but from pages 6 to 8, average position 54.8 over the first window. ChatGPT and Perplexity cited it on 0 of 10 runs each on October 2. Three scheduled reads did not run.</dd>
+          <dt>Result so far</dt><dd>Indexed by day 1. Impressions arrived, met, but from pages 6 to 8, average position 54.8 in the 28 days to October 18. ChatGPT and Perplexity cited it on 0 of 10 runs each on October 2. Three scheduled reads did not run.</dd>
           <dt>Confound</dt><dd>EXP-008 edited the page on day 1.</dd>
         </dl>
       </article>
@@ -387,7 +387,7 @@
         <h3>Does merging and redirecting blog posts Google crawled but declined help the pages they point to, and does it cost AI citations?</h3>
         <p class="meta">evoix.io blog. Five redirects, three posts merged into one article, live September 30.</p>
         <dl>
-          <dt>Result</dt><dd>Day 28, October 28. Google refetched 0 of the 5 redirected addresses, failed. The destination pages' share of site impressions went from 0.83 to 2.30 percent, 2.8 times against a predicted 1.2, met, a derived figure. The two control pages stayed out of the index, met. Indexed pages reached 26 of 40 against a predicted 30, a miss the file expected. The AI citation guard was not scored, and the day 14 read was never run.</dd>
+          <dt>Result</dt><dd>Day 28, October 28. Google refetched 0 of the 5 redirected addresses, failed. The destination pages' share of site impressions went from 0.83 to 2.30 percent, 2.8 times against a predicted 1.2, met, a derived figure. The two control pages stayed out of the index, met. Google recrawled 26 of the 40 indexed pages in the 28 days against a predicted 30 or more, a miss the file expected. The AI citation guard was not scored, and the day 14 read was never run.</dd>
           <dt>Reading</dt><dd>Merging content into an indexed page lifted that page. Redirecting declined pages did nothing visible in 28 days because Google never went back to them. The gain is credited to the merge, as a hypothesis.</dd>
           <dt>Correction</dt><dd>The baseline was first read off a truncated table. The file corrected it, which made the prediction harder to meet.</dd>
         </dl>
@@ -398,7 +398,7 @@
         <h3>A page Google had not crawled in four months might have been skipped as redundant. Does folding it into an indexed hub get the hub crawled, without losing AI citations?</h3>
         <p class="meta"><a href="https://evoix.io/services/ai-seo" rel="noopener">evoix.io/services/ai-seo</a>. Content merged, two redirects, 30 internal links rewritten, September 15.</p>
         <dl>
-          <dt>Result</dt><dd>The hub was predicted to be recrawled within 7 days. Its last crawl was still August 15 at day 7 and still August 15 on October 22, 67 days after the fold. ChatGPT kept naming EVOIX first on 3 of 3 runs and cited the hub on 0 of 3. Claude kept EVOIX as its top pick on 3 of 3.</dd>
+          <dt>Result</dt><dd>The hub was predicted to be recrawled within 7 days. Its last crawl was still August 15 at day 7 and still August 15 on October 22, 37 days after the fold. Google next fetched it on November 12, day 58 (EXP-014). ChatGPT kept naming EVOIX first on 3 of 3 runs and cited the hub on 0 of 3. Claude kept EVOIX as its top pick on 3 of 3.</dd>
           <dt>Reading</dt><dd>Naming held and the hub stayed invisible to Google and ChatGPT. The redundancy explanation was reversed. EXP-014 later tested a different route to the same page.</dd>
         </dl>
       </article>
@@ -406,11 +406,11 @@
       <article class="exp" id="exp-002">
         <div class="head"><a class="id" href="#exp-002">EXP-002</a><span class="badge closed">Verdict</span></div>
         <h3>Can an unknown name get onto the AI engines' King of AEO contender list with one owned page and a few social posts?</h3>
-        <p class="meta"><a href="https://evoix.io/blog/who-is-the-king-of-aeo-dark-horse-entry" rel="noopener">evoix.io King of AEO post</a>, live September 12, plus his social accounts. No domain network, no paid placement.</p>
+        <p class="meta"><a href="https://evoix.io/blog/who-is-the-king-of-aeo-dark-horse-entry" rel="noopener">evoix.io King of AEO post</a>, live September 12 at 10:45 PM Eastern (the post is dated September 13), plus his social accounts. No domain network, no paid placement.</p>
         <dl>
           <dt>Baseline</dt><dd>0 of 9 engine runs and 0 of 3 Google pulls named him.</dd>
-          <dt>Result</dt><dd>September 30, ten runs per engine. Named on 39 of 40 contenders runs and 80 of 80 Florida and Central Florida runs. On the bare question "Who is the king of AEO?", 0 of 12, and Google's AI Overview answered James Dooley. A Florida AI Overview naming him was seen once and stays provisional.</dd>
-          <dt>Where it was wrong</dt><dd>He predicted ChatGPT and Perplexity would not name him at day 7, and both did on 3 of 3. He predicted Claude 0 of 10 at the verdict and got 9 of 10. ChatGPT also dropped to 0 of 3 three days after day 7, then came back to 10 of 10. Why Claude changed is not established.</dd>
+          <dt>Result</dt><dd>September 30, ten runs per engine. Named on 39 of 40 contenders runs and 80 of 80 Florida and Central Florida runs. On the bare question "Who is the king of AEO?", 0 of 12, and Google's AI Overview answered James Dooley. A Florida AI Overview naming him was seen on two signed in browser reads, never on a cold pull, and stays provisional.</dd>
+          <dt>Where it was wrong</dt><dd>He predicted ChatGPT and Perplexity would not name him at day 7, and both did on 3 of 3. He predicted Claude 0 of 10 at the verdict and got 9 of 10. ChatGPT named him on none of the three questions asked three days after day 7, one run each, then came back to 10 of 10. Why Claude changed is not established.</dd>
           <dt>Raw runs</dt><dd><a href="https://github.com/stephanemorera88-spec/king-of-aeo-measurement" rel="noopener">king-of-aeo-measurement on GitHub</a>.</dd>
         </dl>
       </article>
@@ -422,14 +422,14 @@
         <dl>
           <dt>Predicted</dt><dd>With no location signal in the request, ChatGPT names EVOIX on at least 3 of 10 runs by September 26, against 0 of 2 before.</dd>
           <dt>Result</dt><dd>Read September 30, four days late. 10 of 10, beat. The second check, runs from a DeLand location, was never run.</dd>
-          <dt>After</dt><dd>The win has not carried to other engines. Claude named EVOIX on 0 of 15 runs of the question from October 21 to November 5, and Perplexity went from 3 of 3 on October 28 to 0 of 6 on November 5. The cause is not established. The file also logs two of its own counting errors, corrected on October 22.</dd>
+          <dt>After</dt><dd>Claude named EVOIX on 0 of 15 runs of the question from October 21 to November 5. Perplexity named it 3 of 3 on October 28, then 0 of 6 on November 5. The cause is not established. The file also carries two correction notes from October 22, one for comparing two different queries and one for four miscounts.</dd>
         </dl>
       </article>
     </main>
 
     <footer>
       <span>The lab log of Stephane Morera, AEO scientist. DeLand, Florida.</span>
-      <span>Each entry is drawn from that experiment's file. The verdict on EXP-028 goes here on November 30, 2026.</span>
+      <span>Each entry is drawn from that experiment's file. The verdict on EXP-028 is due November 30, 2026, and goes here with it.</span>
       <span><a href="/">The claim</a> · <a href="https://evoix.io/" rel="noopener">evoix.io</a> · <a href="https://stephanemorera.com/" rel="noopener">stephanemorera.com</a> · <a href="https://kingofaeo.io/" rel="noopener">kingofaeo.io</a></span>
     </footer>
   </div>
