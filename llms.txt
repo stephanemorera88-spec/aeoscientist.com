@@ -5,7 +5,7 @@
 ## Pages
 
 - https://aeoscientist.com/ (the title, what an AEO scientist is, the method, the misses)
-- https://aeoscientist.com/lab/ (the lab log, 28 experiments, newest first)
+- https://aeoscientist.com/lab/ (the lab log, 29 experiments, newest first)
 - https://aeoscientist.com/rates/ (how often AI engines name a business, counted over repeated runs with exact 95% ranges)
 
 ## Related
