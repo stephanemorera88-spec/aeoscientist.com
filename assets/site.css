@@ -74,3 +74,15 @@ article.exp dd { margin:0 0 .65rem; }
 .toc a { text-decoration:none; }
 .toc .mono { color:var(--accent); }
 footer { border-top:1px solid var(--line); margin-top:3rem; padding:1.5rem 0 3rem; font-size:.9rem; color:var(--muted); display:flex; flex-direction:column; gap:.5rem; }
+
+/* shared navigation, focus and skip link (2026-11-16) */
+header.top { padding:.55rem 0; }
+header.top nav a { padding:.6rem .1rem; }
+header.top nav a[aria-current="page"] { color:var(--accent); text-decoration:none; }
+header.top .mark[aria-current="page"] { color:var(--ink); }
+a:focus-visible, summary:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
+.cta:focus-visible { background:var(--ink); color:var(--paper); }
+.cta + .cta { margin-left:.6rem; }
+.skip { position:absolute; left:-999px; top:.6rem; z-index:10; padding:.45rem .8rem; background:var(--paper); color:var(--ink); border:1px solid var(--ink); border-radius:4px; }
+.skip:focus { left:1rem; }
+::selection { background:var(--accent); color:var(--paper); }

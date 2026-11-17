@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab Rates | How Often AI Engines Name a Business</title>
+  <meta name="description" content="How often ChatGPT, Perplexity, Gemini, Claude and Google&#x27;s AI Overview name and cite a business, counted over repeated runs and shown with exact 95% ranges. From the lab of AEO scientist Stephane Morera.">
+  <link rel="canonical" href="https://aeoscientist.com/rates/">
+  <link rel="icon" href="/assets/flask.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#18201c">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AEO Scientist">
+  <meta property="og:title" content="How often AI engines name a business">
+  <meta property="og:description" content="Repeated runs, honest ranges. Latest scored read 17 Nov 2026.">
+  <meta property="og:url" content="https://aeoscientist.com/rates/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+  <style>
+:root { --band:#86938b; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --band:#66756d; } }
+:root[data-theme="dark"] { --band:#66756d; }
+.hero p, .rates p, .rates ul { max-width:68ch; }
+.hero p, .rates p, .rates li { text-wrap:pretty; }
+.hero { padding-bottom:.5rem; }
+.rates { border-top:1px solid var(--line); margin-top:2rem; }
+.rates h2 { margin-top:1.75rem; text-wrap:balance; }
+.rates h3 { margin:1.75rem 0 .5rem; text-wrap:balance; }
+.rmeta { font-size:.9rem; color:var(--muted); }
+.rreading { margin-top:1rem; }
+.rlist { border-top:1px solid var(--line); }
+.rrow { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:.15rem 1rem; align-items:baseline; padding:.75rem 0 .85rem; border-bottom:1px solid var(--line); }
+.rl { display:flex; flex-direction:column; }
+.rq { font-size:.9rem; color:var(--muted); }
+.rd { font-size:.8rem; color:var(--muted); }
+.rn, .rr { font-variant-numeric:tabular-nums; white-space:nowrap; text-align:right; }
+.rn { font-size:1rem; }
+.rr { grid-column:2; font-size:.85rem; color:var(--muted); }
+.rb { grid-column:1 / -1; position:relative; display:block; height:12px; margin-top:.55rem; border-radius:3px;
+      background:linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/25% 100%, var(--card); border:1px solid var(--line); }
+.rb-ci { position:absolute; top:2px; bottom:2px; background:var(--band); border-radius:2px; }
+.rb-pt { position:absolute; top:-4px; width:4px; height:18px; margin-left:-2px; background:var(--accent); border-radius:1px; outline:2px solid var(--card); }
+@media (min-width:640px) {
+  .rrow { grid-template-columns:minmax(0,1fr) 6rem 8rem; }
+  .rr { grid-column:auto; }
+}
+.scale { display:flex; justify-content:space-between; padding:.45rem 0 0; font-size:.75rem; color:var(--muted); font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums; }
+.rsum .rn { font-size:1.15rem; grid-column:2 / -1; }
+.rdetails { margin-top:.75rem; }
+.rdetails summary { cursor:pointer; font-size:.92rem; padding:.6rem 0; color:var(--ink); text-decoration:underline; text-decoration-color:var(--accent); text-underline-offset:.18em; }
+.rdetails summary:hover { color:var(--accent); }
+ul.rchanges { padding-left:1.2rem; }
+.rkey { margin:1.25rem 0 0; }
+.rkey .rrow { border-top:1px solid var(--line); }
+</style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://aeoscientist.com/rates/#webpage",
+      "url": "https://aeoscientist.com/rates/",
+      "name": "Lab rates",
+      "description": "How often ChatGPT, Perplexity, Gemini, Claude and Google's AI Overview name and cite a business, counted over repeated runs and shown with exact 95% ranges. From the lab of AEO scientist Stephane Morera.",
+      "inLanguage": "en",
+      "dateModified": "2026-11-17",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://aeoscientist.com/",
+        "name": "AEO Scientist"
+      },
+      "about": {
+        "@id": "https://aeoscientist.com/rates/#dataset"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://aeoscientist.com/rates/#dataset",
+      "name": "AEO lab rates",
+      "description": "Counts of how often AI answer engines retrieved, cited and named a business across repeated runs of the same question, with exact 95% Clopper-Pearson intervals.",
+      "dateModified": "2026-11-17",
+      "creator": {
+        "@type": "Person",
+        "name": "Stephane Morera",
+        "url": "https://aeoscientist.com/"
+      },
+      "variableMeasured": [
+        "in search results",
+        "cited as a source",
+        "named in the answer"
+      ],
+      "measurementTechnique": "Repeated runs per question per engine, exact binomial 95% intervals"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="top">
+      <a class="mark" href="/" aria-label="AEO Scientist, home"><img src="/assets/flask.svg" alt="" width="26" height="26"><span>AEO Scientist</span></a>
+      <nav aria-label="Sections">
+        <a href="/lab/">Lab log</a>
+        <a href="/rates/" aria-current="page">Rates</a>
+        <a href="/#method">Method</a>
+        <a href="/#misses">Misses</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <h1>How often AI engines name a business</h1>
+        <p class="lede">Engines answer the same question differently from one run to the next, so one run proves little. Every number here is a count over repeated runs, with the range the true rate could sit in.</p>
+        <p class="rmeta">Latest scored read 17 Nov 2026. 78 runs on this page.</p>
+        <div class="rkey">
+          <div class="rrow" aria-hidden="true"><span class="rl">How to read a row<span class="rd">2 runs out of 10, true rate somewhere from 3% to 56%</span></span><span class="rn mono">2 of 10</span><span class="rr mono">3% to 56%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:2.5%;width:53.1%"></span><span class="rb-pt" style="left:20.0%"></span></span></div>
+          <p class="rmeta">The green tick is what the runs showed. The grey band is the exact 95% range for the true rate. A wide band means too few runs to say much.</p>
+        </div>
+      </section>
+
+<section class="rates" id="florida-agencies">
+<h2>Who are the best AEO agencies for small businesses in Florida?</h2>
+<p class="rmeta">Measured for EVOIX (evoix.io).</p>
+<p>The exact question, asked 10 times in the ChatGPT web app, read logged out from the United States through a scraping service with no city set, and 5 times each through the ChatGPT, Perplexity, Gemini and Claude APIs with web search on, all inside five minutes on 16 November 2026. The models served were gpt-6 in the ChatGPT web app, gpt-5.4 through the ChatGPT API, sonar-pro on Perplexity, Gemini 3.6 flash and Claude sonnet-5, so the web app and the ChatGPT API are different model versions.</p>
+<h3>ChatGPT web app, step by step</h3><div class="rlist"><div class="scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+<div class="rrow"><span class="rl">In the search results it read<span class="rd mono">16 Nov 2026</span><span class="rd">1 run returned no search list</span></span><span class="rn mono">9 of 9</span><span class="rr mono">66% to 100%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:66.4%;width:33.6%"></span><span class="rb-pt" style="left:100.0%"></span></span></div>
+<div class="rrow"><span class="rl">Cited as a source<span class="rd mono">16 Nov 2026</span><span class="rd">1 run returned no source list</span></span><span class="rn mono">2 of 9</span><span class="rr mono">3% to 60%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:2.8%;width:57.2%"></span><span class="rb-pt" style="left:22.2%"></span></span></div>
+<div class="rrow"><span class="rl">Named in the answer<span class="rd mono">16 Nov 2026</span></span><span class="rn mono">0 of 10</span><span class="rr mono">0% to 31%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:30.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+</div><p class="rreading">An evoix.io page came up in the search results ChatGPT read on all 9 runs that returned a search list. One run returned no list, so it is left out of that row. The page was cited as a source on 2 of the 9 runs that returned a source list. The answer named EVOIX on none of the 10 runs.</p>
+<h3>Named in the answer, by engine</h3>
+<div class="rlist"><div class="scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+<div class="rrow"><span class="rl">ChatGPT web app<span class="rd mono">16 Nov 2026</span></span><span class="rn mono">0 of 10</span><span class="rr mono">0% to 31%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:30.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+<div class="rrow"><span class="rl">ChatGPT API<span class="rd mono">16 Nov 2026</span></span><span class="rn mono">5 of 5</span><span class="rr mono">48% to 100%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:47.8%;width:52.2%"></span><span class="rb-pt" style="left:100.0%"></span></span></div>
+<div class="rrow"><span class="rl">Perplexity API<span class="rd mono">16 Nov 2026</span></span><span class="rn mono">5 of 5</span><span class="rr mono">48% to 100%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:47.8%;width:52.2%"></span><span class="rb-pt" style="left:100.0%"></span></span></div>
+<div class="rrow"><span class="rl">Gemini API<span class="rd mono">16 Nov 2026</span></span><span class="rn mono">3 of 5</span><span class="rr mono">15% to 95%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:14.7%;width:80.1%"></span><span class="rb-pt" style="left:60.0%"></span></span></div>
+<div class="rrow"><span class="rl">Claude API<span class="rd mono">16 Nov 2026</span></span><span class="rn mono">0 of 5</span><span class="rr mono">0% to 52%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:52.2%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+</div>
+<p class="rreading">The ChatGPT web app named EVOIX on 0 of 10 runs. Through the API, ChatGPT and Perplexity named it on 5 of 5 and Gemini on 3 of 5, while Claude named it on 0 of 5. At five runs each, the API ranges are still wide.</p>
+<p class="rmeta">Repeat read due 30 November 2026.</p>
+</section>
+<section class="rates" id="exp-028">
+<h2>World&#x27;s top AEO scientist</h2>
+<p class="rmeta">Measured for Stephane Morera or EVOIX. <a href="/lab/#exp-028">EXP-028 in the lab log</a>.</p>
+<p>EXP-028 asks whether Google&#x27;s AI Overview and four AI engines name Stephane Morera on searches about the AEO scientist. The baseline was read on 16 November 2026 before any piece of the stack went live. Google was read again later that day, off schedule, between 19:31 and 19:49 UTC, and on 17 November between 06:39 and 06:44 UTC as the scheduled day 1 read. Each read is three runs per search, except the later read of the main phrase on 16 November, which is six.</p>
+<h3>Google AI Overview, named in the answer</h3>
+<div class="rlist"><div class="scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+<div class="rrow"><span class="rl">who is the AEO scientist<span class="rd mono">16 Nov 2026, baseline</span></span><span class="rn mono">0 of 3</span><span class="rr mono">0% to 71%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:70.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+<div class="rrow"><span class="rl">who is the AEO scientist<span class="rd mono">16 Nov 2026, later that day, unscheduled</span></span><span class="rn mono">3 of 3</span><span class="rr mono">29% to 100%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:29.2%;width:70.8%"></span><span class="rb-pt" style="left:100.0%"></span></span></div>
+<div class="rrow"><span class="rl">who is the AEO scientist<span class="rd mono">17 Nov 2026, day 1</span></span><span class="rn mono">2 of 3</span><span class="rr mono">9% to 99%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:9.4%;width:89.7%"></span><span class="rb-pt" style="left:66.7%"></span></span></div>
+<div class="rrow"><span class="rl">who is the top AEO scientist<span class="rd mono">16 Nov 2026, baseline</span></span><span class="rn mono">0 of 3</span><span class="rr mono">0% to 71%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:70.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+<div class="rrow"><span class="rl">who is the top AEO scientist<span class="rd mono">17 Nov 2026, day 1</span></span><span class="rn mono">0 of 3</span><span class="rr mono">0% to 71%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:70.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+<div class="rrow"><span class="rl">AEO scientist<span class="rd mono">16 Nov 2026, baseline</span></span><span class="rn mono">0 of 3</span><span class="rr mono">0% to 71%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:70.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+<div class="rrow"><span class="rl">AEO scientist<span class="rd mono">17 Nov 2026, day 1</span></span><span class="rn mono">0 of 3</span><span class="rr mono">0% to 71%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:70.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+<div class="rrow"><span class="rl">world&#x27;s top AEO scientist<span class="rd mono">16 Nov 2026, baseline</span></span><span class="rn mono">0 of 3</span><span class="rr mono">0% to 71%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:70.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+<div class="rrow"><span class="rl">world&#x27;s top AEO scientist<span class="rd mono">16 Nov 2026, later that day, unscheduled</span></span><span class="rn mono">0 of 6</span><span class="rr mono">0% to 46%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:45.9%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+<div class="rrow"><span class="rl">world&#x27;s top AEO scientist<span class="rd mono">17 Nov 2026, day 1</span></span><span class="rn mono">0 of 3</span><span class="rr mono">0% to 71%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:70.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+<div class="rrow"><span class="rl">who is the world&#x27;s top AEO scientist?<span class="rd mono">16 Nov 2026, later that day, unscheduled</span></span><span class="rn mono">0 of 3</span><span class="rr mono">0% to 71%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:70.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+</div>
+<h3>Four engines through their APIs, named in the answer</h3>
+<p class="rmeta">Asked &quot;who is the AEO scientist&quot; at the baseline only. Their next read is 23 November.</p>
+<div class="rlist"><div class="rrow rsum"><span class="rl">ChatGPT, Perplexity, Gemini and Claude, combined<span class="rd">No combined range is shown, because each row is a different engine.</span></span><span class="rn mono">0 of 12 runs</span></div></div><details class="rdetails"><summary>Each engine (4)</summary><div class="rlist"><div class="scale" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+<div class="rrow"><span class="rl">ChatGPT API<span class="rd mono">16 Nov 2026, baseline</span></span><span class="rn mono">0 of 3</span><span class="rr mono">0% to 71%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:70.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+<div class="rrow"><span class="rl">Perplexity API<span class="rd mono">16 Nov 2026, baseline</span></span><span class="rn mono">0 of 3</span><span class="rr mono">0% to 71%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:70.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+<div class="rrow"><span class="rl">Gemini API<span class="rd mono">16 Nov 2026, baseline</span></span><span class="rn mono">0 of 3</span><span class="rr mono">0% to 71%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:70.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+<div class="rrow"><span class="rl">Claude API<span class="rd mono">16 Nov 2026, baseline</span></span><span class="rn mono">0 of 3</span><span class="rr mono">0% to 71%</span><span class="rb" aria-hidden="true"><span class="rb-ci" style="left:0.0%;width:70.8%"></span><span class="rb-pt" style="left:0.0%"></span></span></div>
+</div></details>
+<h3>Baseline against day 1</h3><ul class="rchanges"><li>&quot;who is the AEO scientist&quot; went from 0 of 3 at the baseline to 2 of 3 at day 1. Fisher's exact test gives p = 0.40, short of the 0.05 bar at these run counts.</li><li>&quot;who is the top AEO scientist&quot; was 0 of 3 at the baseline and again at day 1.</li><li>&quot;AEO scientist&quot; was 0 of 3 at the baseline and again at day 1.</li><li>&quot;world&#x27;s top AEO scientist&quot; was 0 of 3 at the baseline and again at day 1.</li></ul>
+<p class="rreading">On &quot;who is the AEO scientist&quot;, Google&#x27;s AI Overview named Stephane Morera on 0 of 3 baseline reads, 3 of 3 later that day and 2 of 3 on day 1. One day 1 answer cited his evoix.io post as a source without naming him. The other three scheduled searches named him on none of their reads, the main phrase &quot;world&#x27;s top AEO scientist&quot; among them, and so did the question form read later that day. At three runs a read these ranges are wide, which is why the day 7 and day 14 reads add ten more runs on the main phrase.</p>
+<p class="rmeta">The next reads are all engines on 23 and 30 November. The verdict is due 30 November.</p>
+</section>
+
+      <section class="rates" id="method">
+        <h2>How these numbers are made</h2>
+        <p>Each run asks the question fresh and saves the full answer. A script checks every saved answer for up to three things, as far as each engine exposes them. Did a page from the target site appear in the search results the engine read, was the site cited as a source, and was the business named in the answer text, with links removed. Those counts become the rows above.</p>
+        <p>The ranges are exact 95% intervals (Clopper-Pearson). A run where a step could not be read is left out of that row and noted on it. The first scheduled read is compared with the latest using Fisher's exact test, and a difference counts as a change only when the p value is below 0.05. A read marked unscheduled was taken outside the plan written before the experiment. It is shown, and it is a lead, not one of the scheduled reads the verdict is scored on. Each range describes one engine, place and time window, never a person's own ChatGPT session. A name in the answer is counted as a mention. Whether the answer recommends the business takes a human read, and the lab log entries do that.</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>The lab of Stephane Morera, AEO scientist. DeLand, Florida.</span>
+      <span>This page is generated from the saved run files and rebuilt after every read.</span>
+      <span><a href="/">Home</a> · <a href="/lab/">Lab log</a> · <a href="https://evoix.io/" rel="noopener">evoix.io</a> · <a href="https://stephanemorera.com/" rel="noopener">stephanemorera.com</a></span>
+    </footer>
+  </div>
+</body>
+</html>
