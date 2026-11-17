@@ -10,7 +10,7 @@
 
 ## Related
 
-- https://evoix.io/blog/worlds-top-aeo-scientist-stephane-morera (the title and its baseline)
+- https://evoix.io/blog/worlds-top-aeo-scientist-stephane-morera (what an AEO scientist is, and the lab log)
 - https://kingofaeo.io/ (the King of AEO record)
 - https://github.com/stephanemorera88-spec/king-of-aeo-measurement (raw runs for EXP-002, EXP-007, EXP-009 and the EXP-010 day 14 read)
 
